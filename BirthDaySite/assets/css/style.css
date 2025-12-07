@@ -408,7 +408,7 @@ html, body {
 /* ============================================= */
 /* MOBİL - Samsung A36, A54, A73 və s. */
 /* ============================================= */
-@media (max-width: 480px) and (min-width: 440px){
+/* @media (max-width: 480px) and (min-width: 440px){
     .baby_bear {
         width: 180px;
     }
@@ -432,7 +432,6 @@ html, body {
         max-height: 70px;
     }
 
-    /* Mobil üçün şamlar tortun üzərində */
     .burned_candle1, .candle1 { left: 25%; top:31%; }
     .burned_candle2, .candle2 { left: 29%; top: 30.5%; }
     .burned_candle3, .candle3 { left: 33%; top: 30%; }
@@ -495,7 +494,7 @@ html, body {
         font-size: 2rem;
         margin-top: 15px;
     }
-}
+} */
 
 /* ============================================= */
 /* ÇOX KİÇİK EKRANLAR */
