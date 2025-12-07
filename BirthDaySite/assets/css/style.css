@@ -550,7 +550,7 @@ html, body {
 /* SAMSUNG A33 - xüsusi responsive */
 /* Ekran eni: ~412px */
 /* ============================================= */
-@media (max-width: 440px) and (min-width: 380px) {
+@media (max-width: 480px) and (min-width: 360px) {
 
     .baby_bear {
         width: 220px;
