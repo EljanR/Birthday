@@ -335,7 +335,7 @@ html, body {
 /* ============================================= */
 /* TABLET ÜÇÜN */
 /* ============================================= */
-/* @media (max-width: 900px) and (min-width: 481px) {
+@media (max-width: 900px) and (min-width: 481px) {
     .baby_bear {
         width: 220px;
     }
@@ -353,7 +353,7 @@ html, body {
         height: 9vw;
         min-width: 42px;
         min-height: 62px;
-    }
+    } 
 
     /* Tablet üçün şam pozisiyaları */
     .burned_candle1, .candle1 { left: 25%; top:31%; }
@@ -403,7 +403,7 @@ html, body {
     .birthday_emojis {
         font-size: 2.5rem;
     }
-} */
+}
 
 /* ============================================= */
 /* MOBİL - Samsung A36, A54, A73 və s. */
