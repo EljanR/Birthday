@@ -72,49 +72,173 @@ html, body {
     user-select: none;
 }
 
-/* Yanan şamların yerləşməsi - Desktop/Tablet */
-.burned_candle1 { left: 32%; top: 15%; }
-.burned_candle2 { left: 35%; top: 14%; }
-.burned_candle3 { left: 38%; top: 13%; }
-.burned_candle4 { left: 41%; top: 12%; }
-.burned_candle5 { left: 44%; top: 11%; }
-.burned_candle6 { left: 47%; top: 10%; }
-.burned_candle7 { left: 50%; top: 11%; }
-.burned_candle8 { left: 53%; top: 12%; }
-.burned_candle9 { left: 56%; top: 13%; }
-.burned_candle10 { left: 59%; top: 14%; }
-.burned_candle11 { left: 62%; top: 15%; }
-.burned_candle12 { left: 34%; top: 17%; }
-.burned_candle13 { left: 37%; top: 16%; }
-.burned_candle14 { left: 41%; top: 15%; }
-.burned_candle15 { left: 44%; top: 14%; }
-.burned_candle16 { left: 48%; top: 14%; }
-.burned_candle17 { left: 52%; top: 15%; }
-.burned_candle18 { left: 56%; top: 16%; }
-.burned_candle19 { left: 59%; top: 17%; }
-.burned_candle20 { left: 47%; top: 18%; }
+/* ============================================= */
+/* DESKTOP - Tortun üzərində dairəvi düzülüş */
+/* Tortun mərkəzi: 50%, Şamlar tortun üst hissəsində */
+/* ============================================= */
 
-/* Sönən şamlar eyni yerlərdə */
-.candle1 { left: 32%; top: 15%; }
-.candle2 { left: 35%; top: 14%; }
-.candle3 { left: 38%; top: 13%; }
-.candle4 { left: 41%; top: 12%; }
-.candle5 { left: 44%; top: 11%; }
-.candle6 { left: 47%; top: 10%; }
-.candle7 { left: 50%; top: 11%; }
-.candle8 { left: 53%; top: 12%; }
-.candle9 { left: 56%; top: 13%; }
-.candle10 { left: 59%; top: 14%; }
-.candle11 { left: 62%; top: 15%; }
-.candle12 { left: 34%; top: 17%; }
-.candle13 { left: 37%; top: 16%; }
-.candle14 { left: 41%; top: 15%; }
-.candle15 { left: 44%; top: 14%; }
-.candle16 { left: 48%; top: 14%; }
-.candle17 { left: 52%; top: 15%; }
-.candle18 { left: 56%; top: 16%; }
-.candle19 { left: 59%; top: 17%; }
-.candle20 { left: 47%; top: 18%; }
+/* Birinci sıra - Üst dairə (11 şam) */
+.burned_candle1, .candle1 { 
+    left: 32%; 
+    top: 8%; 
+}
+.burned_candle2, .candle2 { 
+    left: 35%; 
+    top: 6%; 
+}
+.burned_candle3, .candle3 { 
+    left: 38%; 
+    top: 5%; 
+}
+.burned_candle4, .candle4 { 
+    left: 41%; 
+    top: 4%; 
+}
+.burned_candle5, .candle5 { 
+    left: 44%; 
+    top: 3%; 
+}
+.burned_candle6, .candle6 { 
+    left: 47%; 
+    top: 2%; 
+}
+.burned_candle7, .candle7 { 
+    left: 50%; 
+    top: 3%; 
+}
+.burned_candle8, .candle8 { 
+    left: 53%; 
+    top: 4%; 
+}
+.burned_candle9, .candle9 { 
+    left: 56%; 
+    top: 5%; 
+}
+.burned_candle10, .candle10 { 
+    left: 59%; 
+    top: 6%; 
+}
+.burned_candle11, .candle11 { 
+    left: 62%; 
+    top: 8%; 
+}
+
+/* İkinci sıra - Aşağı dairə (9 şam) */
+.burned_candle12, .candle12 { 
+    left: 34%; 
+    top: 11%; 
+}
+.burned_candle13, .candle13 { 
+    left: 37%; 
+    top: 9%; 
+}
+.burned_candle14, .candle14 { 
+    left: 41%; 
+    top: 8%; 
+}
+.burned_candle15, .candle15 { 
+    left: 44%; 
+    top: 7%; 
+}
+.burned_candle16, .candle16 { 
+    left: 47%; 
+    top: 6%; 
+}
+.burned_candle17, .candle17 { 
+    left: 50%; 
+    top: 7%; 
+}
+.burned_candle18, .candle18 { 
+    left: 54%; 
+    top: 8%; 
+}
+.burned_candle19, .candle19 { 
+    left: 57%; 
+    top: 9%; 
+}
+.burned_candle20, .candle20 { 
+    left: 60%; 
+    top: 11%; 
+}
+
+/* ============================================= */
+/* "ŞAMLARI SÖNDÜR" YAZISI */
+/* ============================================= */
+.Warning {
+    position: fixed;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    animation: fadeInBounce 1s ease-out;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.Warning.hide {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-30px);
+    pointer-events: none;
+}
+
+.Warning h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+    padding: 18px 45px;
+    border-radius: 60px;
+    box-shadow: 0 10px 40px rgba(196, 69, 105, 0.5),
+                0 0 0 5px rgba(255, 255, 255, 0.3),
+                0 0 30px rgba(255, 107, 157, 0.6);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1.5px;
+    animation: pulseGlow 2s ease-in-out infinite;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    display: inline-block;
+}
+
+.Warning h1::before {
+    content: '🎂 ';
+    font-size: 1.8rem;
+}
+
+.Warning h1::after {
+    content: ' 🎂';
+    font-size: 1.8rem;
+}
+
+/* Animasiya - Pulsasiya və işıq */
+@keyframes pulseGlow {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 10px 40px rgba(196, 69, 105, 0.5),
+                    0 0 0 5px rgba(255, 255, 255, 0.3),
+                    0 0 30px rgba(255, 107, 157, 0.6);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 15px 50px rgba(196, 69, 105, 0.7),
+                    0 0 0 7px rgba(255, 255, 255, 0.5),
+                    0 0 50px rgba(255, 107, 157, 0.9);
+    }
+}
+
+@keyframes fadeInBounce {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(50px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
 
 /* Təbrik kartı */
 .birthday_card {
@@ -209,7 +333,7 @@ html, body {
 }
 
 /* ============================================= */
-/* TABLET ÜÇÜN - iPad və orta ölçülü cihazlar */
+/* TABLET ÜÇÜN */
 /* ============================================= */
 @media (max-width: 768px) and (min-width: 481px) {
     .baby_bear {
@@ -229,6 +353,34 @@ html, body {
         height: 9vw;
         min-width: 42px;
         min-height: 62px;
+    }
+
+    /* Tablet üçün şam pozisiyaları */
+    .burned_candle1, .candle1 { left: 30%; top: 10%; }
+    .burned_candle2, .candle2 { left: 33%; top: 8%; }
+    .burned_candle3, .candle3 { left: 36%; top: 7%; }
+    .burned_candle4, .candle4 { left: 39%; top: 6%; }
+    .burned_candle5, .candle5 { left: 42%; top: 5%; }
+    .burned_candle6, .candle6 { left: 45%; top: 4%; }
+    .burned_candle7, .candle7 { left: 48%; top: 5%; }
+    .burned_candle8, .candle8 { left: 51%; top: 6%; }
+    .burned_candle9, .candle9 { left: 54%; top: 7%; }
+    .burned_candle10, .candle10 { left: 57%; top: 8%; }
+    .burned_candle11, .candle11 { left: 60%; top: 10%; }
+    
+    .burned_candle12, .candle12 { left: 32%; top: 13%; }
+    .burned_candle13, .candle13 { left: 35%; top: 11%; }
+    .burned_candle14, .candle14 { left: 39%; top: 10%; }
+    .burned_candle15, .candle15 { left: 42%; top: 9%; }
+    .burned_candle16, .candle16 { left: 45%; top: 8%; }
+    .burned_candle17, .candle17 { left: 48%; top: 9%; }
+    .burned_candle18, .candle18 { left: 52%; top: 10%; }
+    .burned_candle19, .candle19 { left: 55%; top: 11%; }
+    .burned_candle20, .candle20 { left: 58%; top: 13%; }
+
+    .Warning h1 {
+        font-size: 1.6rem;
+        padding: 15px 35px;
     }
 
     .birthday_card {
@@ -280,30 +432,42 @@ html, body {
         max-height: 70px;
     }
 
-    /* Universal mobil yerləşmə - bütün telefonlar üçün */
-    .burned_candle1, .candle1 { left: 25%; top: 31%; }
-.burned_candle2, .candle2 { left: 29%; top: 30.5%; }
-.burned_candle3, .candle3 { left: 33%; top: 30%; }
-.burned_candle4, .candle4 { left: 37%; top: 29.5%; }
-.burned_candle5, .candle5 { left: 41%; top: 29%; }
-.burned_candle6, .candle6 { left: 45%; top: 28.5%; }
-.burned_candle7, .candle7 { left: 49%; top: 29%; }
-.burned_candle8, .candle8 { left: 53%; top: 29.5%; }
-.burned_candle9, .candle9 { left: 57%; top: 30%; }
-.burned_candle10, .candle10 { left: 61%; top: 30.5%; }
-.burned_candle11, .candle11 { left: 65%; top: 31%; }
-
+    /* Mobil üçün şamlar tortun üzərində */
+    .burned_candle1, .candle1 { left: 25%; top: 22%; }
+    .burned_candle2, .candle2 { left: 29%; top: 20%; }
+    .burned_candle3, .candle3 { left: 33%; top: 19%; }
+    .burned_candle4, .candle4 { left: 37%; top: 18%; }
+    .burned_candle5, .candle5 { left: 41%; top: 17%; }
+    .burned_candle6, .candle6 { left: 45%; top: 16%; }
+    .burned_candle7, .candle7 { left: 49%; top: 17%; }
+    .burned_candle8, .candle8 { left: 53%; top: 18%; }
+    .burned_candle9, .candle9 { left: 57%; top: 19%; }
+    .burned_candle10, .candle10 { left: 61%; top: 20%; }
+    .burned_candle11, .candle11 { left: 65%; top: 22%; }
     
-.burned_candle12, .candle12 { left: 27%; top: 35%; }
-.burned_candle13, .candle13 { left: 31%; top: 34.5%; }
-.burned_candle14, .candle14 { left: 35%; top: 34%; }
-.burned_candle15, .candle15 { left: 39%; top: 33.5%; }
-.burned_candle16, .candle16 { left: 43%; top: 33%; }
-.burned_candle17, .candle17 { left: 47%; top: 33.5%; }
-.burned_candle18, .candle18 { left: 51%; top: 34%; }
-.burned_candle19, .candle19 { left: 55%; top: 34.5%; }
-.burned_candle20, .candle20 { left: 59%; top: 35%; }
+    .burned_candle12, .candle12 { left: 27%; top: 26%; }
+    .burned_candle13, .candle13 { left: 31%; top: 24%; }
+    .burned_candle14, .candle14 { left: 35%; top: 23%; }
+    .burned_candle15, .candle15 { left: 39%; top: 22%; }
+    .burned_candle16, .candle16 { left: 43%; top: 21%; }
+    .burned_candle17, .candle17 { left: 47%; top: 22%; }
+    .burned_candle18, .candle18 { left: 51%; top: 23%; }
+    .burned_candle19, .candle19 { left: 55%; top: 24%; }
+    .burned_candle20, .candle20 { left: 59%; top: 26%; }
 
+    .Warning {
+        bottom: 10%;
+    }
+
+    .Warning h1 {
+        font-size: 1.3rem;
+        padding: 12px 28px;
+    }
+
+    .Warning h1::before,
+    .Warning h1::after {
+        font-size: 1.3rem;
+    }
 
     .birthday_card {
         padding: 28px 22px;
@@ -334,7 +498,7 @@ html, body {
 }
 
 /* ============================================= */
-/* ÇOX KİÇİK EKRANLAR - 360px-dən kiçik */
+/* ÇOX KİÇİK EKRANLAR */
 /* ============================================= */
 @media (max-width: 360px) {
     .baby_bear {
@@ -356,6 +520,11 @@ html, body {
         min-height: 52px;
         max-width: 48px;
         max-height: 68px;
+    }
+
+    .Warning h1 {
+        font-size: 1.1rem;
+        padding: 10px 22px;
     }
 
     .birthday_card {
