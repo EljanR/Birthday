@@ -335,14 +335,14 @@ html, body {
 /* ============================================= */
 /* TABLET ÜÇÜN */
 /* ============================================= */
-@media (max-width: 768px) and (min-width: 481px) {
+@media (max-width: 900px) and (min-width: 481px) {
     .baby_bear {
         width: 220px;
     }
 
     .cake_png {
         width: 65vw;
-        height: 65vw;
+        height: 75vw;
         max-width: 500px;
         max-height: 500px;
     }
@@ -356,27 +356,27 @@ html, body {
     }
 
     /* Tablet üçün şam pozisiyaları */
-    .burned_candle1, .candle1 { left: 30%; top: 10%; }
-    .burned_candle2, .candle2 { left: 33%; top: 8%; }
-    .burned_candle3, .candle3 { left: 36%; top: 7%; }
-    .burned_candle4, .candle4 { left: 39%; top: 6%; }
-    .burned_candle5, .candle5 { left: 42%; top: 5%; }
-    .burned_candle6, .candle6 { left: 45%; top: 4%; }
-    .burned_candle7, .candle7 { left: 48%; top: 5%; }
-    .burned_candle8, .candle8 { left: 51%; top: 6%; }
-    .burned_candle9, .candle9 { left: 54%; top: 7%; }
-    .burned_candle10, .candle10 { left: 57%; top: 8%; }
-    .burned_candle11, .candle11 { left: 60%; top: 10%; }
+    .burned_candle1, .candle1 { left: 25%; top:31%; }
+    .burned_candle2, .candle2 { left: 29%; top: 30.5%; }
+    .burned_candle3, .candle3 { left: 33%; top: 30%; }
+    .burned_candle4, .candle4 { left: 37%; top: 29.5%; }
+    .burned_candle5, .candle5 { left: 41%; top: 29%; }
+    .burned_candle6, .candle6 { left: 45%; top: 28.5%; }
+    .burned_candle7, .candle7 { left: 49%; top: 29%; }
+    .burned_candle8, .candle8 { left: 53%; top: 29.5%; }
+    .burned_candle9, .candle9 { left: 57%; top: 30%; }
+    .burned_candle10, .candle10 { left: 61%; top: 30.5%; }
+    .burned_candle11, .candle11 { left: 65%; top: 31%; }
     
-    .burned_candle12, .candle12 { left: 32%; top: 13%; }
-    .burned_candle13, .candle13 { left: 35%; top: 11%; }
-    .burned_candle14, .candle14 { left: 39%; top: 10%; }
-    .burned_candle15, .candle15 { left: 42%; top: 9%; }
-    .burned_candle16, .candle16 { left: 45%; top: 8%; }
-    .burned_candle17, .candle17 { left: 48%; top: 9%; }
-    .burned_candle18, .candle18 { left: 52%; top: 10%; }
-    .burned_candle19, .candle19 { left: 55%; top: 11%; }
-    .burned_candle20, .candle20 { left: 58%; top: 13%; }
+    .burned_candle12, .candle12 { left: 27%; top: 33%; }
+    .burned_candle13, .candle13 { left: 31%; top: 32.5%; }
+    .burned_candle14, .candle14 { left: 35%; top: 32%; }
+    .burned_candle15, .candle15 { left: 39%; top: 31.5%; }
+    .burned_candle16, .candle16 { left: 43%; top: 31%; }
+    .burned_candle17, .candle17 { left: 47%; top: 31.5%; }
+    .burned_candle18, .candle18 { left: 51%; top: 32%; }
+    .burned_candle19, .candle19 { left: 55%; top: 32.5%; }
+    .burned_candle20, .candle20 { left: 59%; top: 33%; }
 
     .Warning h1 {
         font-size: 1.6rem;
@@ -433,27 +433,27 @@ html, body {
     }
 
     /* Mobil üçün şamlar tortun üzərində */
-    .burned_candle1, .candle1 { left: 25%; top: 22%; }
-    .burned_candle2, .candle2 { left: 29%; top: 20%; }
-    .burned_candle3, .candle3 { left: 33%; top: 19%; }
-    .burned_candle4, .candle4 { left: 37%; top: 18%; }
-    .burned_candle5, .candle5 { left: 41%; top: 17%; }
-    .burned_candle6, .candle6 { left: 45%; top: 16%; }
-    .burned_candle7, .candle7 { left: 49%; top: 17%; }
-    .burned_candle8, .candle8 { left: 53%; top: 18%; }
-    .burned_candle9, .candle9 { left: 57%; top: 19%; }
-    .burned_candle10, .candle10 { left: 61%; top: 20%; }
-    .burned_candle11, .candle11 { left: 65%; top: 22%; }
+    .burned_candle1, .candle1 { left: 25%; top:31%; }
+    .burned_candle2, .candle2 { left: 29%; top: 30.5%; }
+    .burned_candle3, .candle3 { left: 33%; top: 30%; }
+    .burned_candle4, .candle4 { left: 37%; top: 29.5%; }
+    .burned_candle5, .candle5 { left: 41%; top: 29%; }
+    .burned_candle6, .candle6 { left: 45%; top: 28.5%; }
+    .burned_candle7, .candle7 { left: 49%; top: 29%; }
+    .burned_candle8, .candle8 { left: 53%; top: 29.5%; }
+    .burned_candle9, .candle9 { left: 57%; top: 30%; }
+    .burned_candle10, .candle10 { left: 61%; top: 30.5%; }
+    .burned_candle11, .candle11 { left: 65%; top: 31%; }
     
-    .burned_candle12, .candle12 { left: 27%; top: 26%; }
-    .burned_candle13, .candle13 { left: 31%; top: 24%; }
-    .burned_candle14, .candle14 { left: 35%; top: 23%; }
-    .burned_candle15, .candle15 { left: 39%; top: 22%; }
-    .burned_candle16, .candle16 { left: 43%; top: 21%; }
-    .burned_candle17, .candle17 { left: 47%; top: 22%; }
-    .burned_candle18, .candle18 { left: 51%; top: 23%; }
-    .burned_candle19, .candle19 { left: 55%; top: 24%; }
-    .burned_candle20, .candle20 { left: 59%; top: 26%; }
+    .burned_candle12, .candle12 { left: 27%; top: 33%; }
+    .burned_candle13, .candle13 { left: 31%; top: 32.5%; }
+    .burned_candle14, .candle14 { left: 35%; top: 32%; }
+    .burned_candle15, .candle15 { left: 39%; top: 31.5%; }
+    .burned_candle16, .candle16 { left: 43%; top: 31%; }
+    .burned_candle17, .candle17 { left: 47%; top: 31.5%; }
+    .burned_candle18, .candle18 { left: 51%; top: 32%; }
+    .burned_candle19, .candle19 { left: 55%; top: 32.5%; }
+    .burned_candle20, .candle20 { left: 59%; top: 33%; }
 
     .Warning {
         bottom: 10%;
@@ -500,7 +500,7 @@ html, body {
 /* ============================================= */
 /* ÇOX KİÇİK EKRANLAR */
 /* ============================================= */
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
     .baby_bear {
         width: 140px;
     }
@@ -547,4 +547,4 @@ html, body {
     .birthday_emojis {
         font-size: 1.7rem;
     }
-}
+} */
