@@ -262,46 +262,46 @@ html, body {
     }
 
     .cake_png {
-        width: 85vw;
-        height: 85vw;
+        width: 80vw;
+        height: 80vw;
         max-width: 380px;
         max-height: 380px;
-        min-width: 280px;
-        min-height: 280px;
+        min-width: 260px;
+        min-height: 260px;
     }
 
     .my_card img[class^="burned_candle"],
     .my_card img[class^="candle"] {
-        width: 9vw;
-        height: 11vw;
-        min-width: 40px;
-        min-height: 58px;
-        max-width: 55px;
-        max-height: 75px;
+        width: 8vw;
+        height: 10vw;
+        min-width: 35px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 70px;
     }
 
-    /* Samsung seriyası üçün şamların mobil yerləşməsi */
-    .burned_candle1, .candle1 { left: 24%; top: 33%; }
-    .burned_candle2, .candle2 { left: 28%; top: 32%; }
-    .burned_candle3, .candle3 { left: 32%; top: 31%; }
-    .burned_candle4, .candle4 { left: 36%; top: 30%; }
-    .burned_candle5, .candle5 { left: 40%; top: 29%; }
-    .burned_candle6, .candle6 { left: 44%; top: 28%; }
-    .burned_candle7, .candle7 { left: 48%; top: 28%; }
-    .burned_candle8, .candle8 { left: 52%; top: 29%; }
-    .burned_candle9, .candle9 { left: 56%; top: 30%; }
-    .burned_candle10, .candle10 { left: 60%; top: 31%; }
-    .burned_candle11, .candle11 { left: 64%; top: 32%; }
+    /* Universal mobil yerləşmə - bütün telefonlar üçün */
+    .burned_candle1, .candle1 { left: 30%; top: 38%; }
+    .burned_candle2, .candle2 { left: 33%; top: 37%; }
+    .burned_candle3, .candle3 { left: 36%; top: 36%; }
+    .burned_candle4, .candle4 { left: 39%; top: 35%; }
+    .burned_candle5, .candle5 { left: 42%; top: 34%; }
+    .burned_candle6, .candle6 { left: 45%; top: 33%; }
+    .burned_candle7, .candle7 { left: 48%; top: 33%; }
+    .burned_candle8, .candle8 { left: 51%; top: 34%; }
+    .burned_candle9, .candle9 { left: 54%; top: 35%; }
+    .burned_candle10, .candle10 { left: 57%; top: 36%; }
+    .burned_candle11, .candle11 { left: 60%; top: 37%; }
     
-    .burned_candle12, .candle12 { left: 26%; top: 35%; }
-    .burned_candle13, .candle13 { left: 30%; top: 34%; }
-    .burned_candle14, .candle14 { left: 35%; top: 33%; }
-    .burned_candle15, .candle15 { left: 40%; top: 32%; }
-    .burned_candle16, .candle16 { left: 44%; top: 31%; }
-    .burned_candle17, .candle17 { left: 48%; top: 32%; }
-    .burned_candle18, .candle18 { left: 52%; top: 33%; }
-    .burned_candle19, .candle19 { left: 56%; top: 34%; }
-    .burned_candle20, .candle20 { left: 60%; top: 35%; }
+    .burned_candle12, .candle12 { left: 32%; top: 40%; }
+    .burned_candle13, .candle13 { left: 35%; top: 39%; }
+    .burned_candle14, .candle14 { left: 39%; top: 38%; }
+    .burned_candle15, .candle15 { left: 42%; top: 37%; }
+    .burned_candle16, .candle16 { left: 45%; top: 36%; }
+    .burned_candle17, .candle17 { left: 48%; top: 37%; }
+    .burned_candle18, .candle18 { left: 52%; top: 38%; }
+    .burned_candle19, .candle19 { left: 56%; top: 39%; }
+    .burned_candle20, .candle20 { left: 59%; top: 40%; }
 
     .birthday_card {
         padding: 28px 22px;
