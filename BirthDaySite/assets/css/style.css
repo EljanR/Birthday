@@ -338,7 +338,12 @@ html, body {
     .baby_bear {
         width: 150px;
     }
-
+    #peaceText {
+        top: 5px;
+        right: 5px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
     .cake_png {
         width: 100vw;
         height: 75vw;
