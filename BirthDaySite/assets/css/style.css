@@ -576,27 +576,27 @@ html, body {
     }
 
     /* A33 üçün xüsusi şam yerləşmələri – bir az yuxarı və daha sıx */
-    .burned_candle1, .candle1 { left: 26%; top: 38%; }
-    .burned_candle2, .candle2 { left: 30%; top: 37.5%; }
-    .burned_candle3, .candle3 { left: 34%; top: 37%; }
-    .burned_candle4, .candle4 { left: 38%; top: 36.5%; }
-    .burned_candle5, .candle5 { left: 42%; top: 36%; }
-    .burned_candle6, .candle6 { left: 46%; top: 35.5%; }
-    .burned_candle7, .candle7 { left: 50%; top: 36%; }
-    .burned_candle8, .candle8 { left: 54%; top: 36.5%; }
-    .burned_candle9, .candle9 { left: 58%; top: 37%; }
-    .burned_candle10, .candle10 { left: 62%; top: 37.5%; }
-    .burned_candle11, .candle11 { left: 66%; top: 38%; }
+    .burned_candle1, .candle1 { left: 26%; top: 37%; }
+    .burned_candle2, .candle2 { left: 30%; top: 36.5%; }
+    .burned_candle3, .candle3 { left: 34%; top: 36%; }
+    .burned_candle4, .candle4 { left: 38%; top: 35.5%; }
+    .burned_candle5, .candle5 { left: 42%; top: 35%; }
+    .burned_candle6, .candle6 { left: 46%; top: 34.5%; }
+    .burned_candle7, .candle7 { left: 50%; top: 35%; }
+    .burned_candle8, .candle8 { left: 54%; top: 35.5%; }
+    .burned_candle9, .candle9 { left: 58%; top: 36%; }
+    .burned_candle10, .candle10 { left: 62%; top: 36.5%; }
+    .burned_candle11, .candle11 { left: 66%; top: 37%; }
 
-    .burned_candle12, .candle12 { left: 28%; top: 40%; }
-    .burned_candle13, .candle13 { left: 32%; top: 39.5%; }
-    .burned_candle14, .candle14 { left: 36%; top: 39%; }
-    .burned_candle15, .candle15 { left: 40%; top: 38.5%; }
-    .burned_candle16, .candle16 { left: 44%; top: 38%; }
-    .burned_candle17, .candle17 { left: 48%; top: 38.5%; }
-    .burned_candle18, .candle18 { left: 52%; top: 39%; }
-    .burned_candle19, .candle19 { left: 56%; top: 39.5%; }
-    .burned_candle20, .candle20 { left: 60%; top: 40%; }
+    .burned_candle12, .candle12 { left: 28%; top: 39%; }
+    .burned_candle13, .candle13 { left: 32%; top: 38.5%; }
+    .burned_candle14, .candle14 { left: 36%; top: 38%; }
+    .burned_candle15, .candle15 { left: 40%; top: 37.5%; }
+    .burned_candle16, .candle16 { left: 44%; top: 37%; }
+    .burned_candle17, .candle17 { left: 48%; top: 37.5%; }
+    .burned_candle18, .candle18 { left: 52%; top: 38%; }
+    .burned_candle19, .candle19 { left: 56%; top: 38.5%; }
+    .burned_candle20, .candle20 { left: 60%; top: 39%; }
 
     /* A33 warning/text ölçüləri */
     .Warning h1 {
