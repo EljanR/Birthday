@@ -7,10 +7,12 @@
 html, body {
     height: 100%;
     background-color: rgb(255, 144, 162) !important;
+    overflow-x: hidden;
 }
-.baby_bear{
-       width: 300px;
-       position: absolute;
+
+.baby_bear {
+    width: 300px;
+    position: absolute;
 }
 
 .my_card {
@@ -48,6 +50,12 @@ html, body {
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+    transition: transform 0.2s ease;
+}
+
+/* Toxunma effekti */
+.my_card img[class^="burned_candle"]:active {
+    transform: scale(1.15);
 }
 
 /* Sönən şamlar */
@@ -64,7 +72,7 @@ html, body {
     user-select: none;
 }
 
-/* Yanan şamların yerləşməsi */
+/* Yanan şamların yerləşməsi - Desktop/Tablet */
 .burned_candle1 { left: 32%; top: 15%; }
 .burned_candle2 { left: 35%; top: 14%; }
 .burned_candle3 { left: 38%; top: 13%; }
@@ -122,6 +130,7 @@ html, body {
     z-index: 1000;
     transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     border: 5px solid rgba(255, 255, 255, 0.5);
+    max-width: 90vw;
 }
 
 .birthday_card.show {
@@ -199,11 +208,17 @@ html, body {
     }
 }
 
-/* Tablet üçün */
-@media (max-width: 768px) {
+/* ============================================= */
+/* TABLET ÜÇÜN - iPad və orta ölçülü cihazlar */
+/* ============================================= */
+@media (max-width: 768px) and (min-width: 481px) {
+    .baby_bear {
+        width: 220px;
+    }
+
     .cake_png {
-        width: 70vw;
-        height: 70vw;
+        width: 65vw;
+        height: 65vw;
         max-width: 500px;
         max-height: 500px;
     }
@@ -212,26 +227,21 @@ html, body {
     .my_card img[class^="candle"] {
         width: 7vw;
         height: 9vw;
-        min-width: 45px;
-        min-height: 60px;
-    }
-
-    .my_card img[class^="burned_candle"] {
-        padding: 10px;
+        min-width: 42px;
+        min-height: 62px;
     }
 
     .birthday_card {
-        padding: 40px 30px;
-        width: 90%;
-        max-width: 400px;
+        padding: 40px 35px;
+        width: 85%;
     }
 
     .birthday_title {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     .birthday_subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .hearts {
@@ -242,55 +252,128 @@ html, body {
         font-size: 2.5rem;
     }
 }
-/* Mobil üçün */
+
+/* ============================================= */
+/* MOBİL - Samsung A36, A54, A73 və s. */
+/* ============================================= */
 @media (max-width: 480px) {
+    .baby_bear {
+        width: 180px;
+    }
+
     .cake_png {
-        width: 80vw;
-        height: 80vw;
-        max-width: 400px;
-        max-height: 400px;
+        width: 85vw;
+        height: 85vw;
+        max-width: 380px;
+        max-height: 380px;
+        min-width: 280px;
+        min-height: 280px;
     }
 
     .my_card img[class^="burned_candle"],
     .my_card img[class^="candle"] {
-        width: 8vw;
-        height: 10vw;
-        min-width: 35px;
-        min-height: 50px;
+        width: 9vw;
+        height: 11vw;
+        min-width: 40px;
+        min-height: 58px;
+        max-width: 55px;
+        max-height: 75px;
     }
 
-    /* Mobil üçün şamları qövsvarı yerləşdiririk */
-    .burned_candle1, .candle1 { left: 27%; top: 37%; }
-    .burned_candle2, .candle2 { left: 30%; top: 36.5%; }
-    .burned_candle3, .candle3 { left: 33%; top: 36%; }
-    .burned_candle4, .candle4 { left: 37%; top: 35.5%; }
-    .burned_candle5, .candle5 { left: 41%; top: 35%; }
-    .burned_candle6, .candle6 { left: 44%; top: 34.5%; }
-    .burned_candle7, .candle7 { left: 49%; top: 35%; }
-    .burned_candle8, .candle8 { left: 53%; top: 35.5%; }
-    .burned_candle9, .candle9 { left: 57%; top: 36%; }
-    .burned_candle10, .candle10 { left: 60%; top: 36.5%; }
-    .burned_candle11, .candle11 { left: 63%; top: 37%; }
-
-    .burned_candle12, .candle12 { left: 28%; top: 39%; }
-    .burned_candle13, .candle13 { left: 32%; top: 38.5%; }
-    .burned_candle14, .candle14 { left: 36%; top: 38%; }
-    .burned_candle15, .candle15 { left: 40%; top: 37.5%; }
-    .burned_candle16, .candle16 { left: 44%; top: 37%; }
-    .burned_candle17, .candle17 { left: 48%; top: 37.5%; }
-    .burned_candle18, .candle18 { left: 52%; top: 38%; }
-    .burned_candle19, .candle19 { left: 56%; top: 38.5%; }
-    .burned_candle20, .candle20 { left: 60%; top: 39%; }
+    /* Samsung seriyası üçün şamların mobil yerləşməsi */
+    .burned_candle1, .candle1 { left: 24%; top: 33%; }
+    .burned_candle2, .candle2 { left: 28%; top: 32%; }
+    .burned_candle3, .candle3 { left: 32%; top: 31%; }
+    .burned_candle4, .candle4 { left: 36%; top: 30%; }
+    .burned_candle5, .candle5 { left: 40%; top: 29%; }
+    .burned_candle6, .candle6 { left: 44%; top: 28%; }
+    .burned_candle7, .candle7 { left: 48%; top: 28%; }
+    .burned_candle8, .candle8 { left: 52%; top: 29%; }
+    .burned_candle9, .candle9 { left: 56%; top: 30%; }
+    .burned_candle10, .candle10 { left: 60%; top: 31%; }
+    .burned_candle11, .candle11 { left: 64%; top: 32%; }
+    
+    .burned_candle12, .candle12 { left: 26%; top: 35%; }
+    .burned_candle13, .candle13 { left: 30%; top: 34%; }
+    .burned_candle14, .candle14 { left: 35%; top: 33%; }
+    .burned_candle15, .candle15 { left: 40%; top: 32%; }
+    .burned_candle16, .candle16 { left: 44%; top: 31%; }
+    .burned_candle17, .candle17 { left: 48%; top: 32%; }
+    .burned_candle18, .candle18 { left: 52%; top: 33%; }
+    .burned_candle19, .candle19 { left: 56%; top: 34%; }
+    .burned_candle20, .candle20 { left: 60%; top: 35%; }
 
     .birthday_card {
-        padding: 30px 20px;
+        padding: 28px 22px;
+        width: 92%;
+        border-radius: 30px;
     }
 
     .birthday_title {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        line-height: 1.3;
     }
 
     .birthday_subtitle {
         font-size: 0.9rem;
+        margin-bottom: 18px;
+    }
+
+    .hearts {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .birthday_emojis {
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+}
+
+/* ============================================= */
+/* ÇOX KİÇİK EKRANLAR - 360px-dən kiçik */
+/* ============================================= */
+@media (max-width: 360px) {
+    .baby_bear {
+        width: 140px;
+    }
+
+    .cake_png {
+        width: 90vw;
+        height: 90vw;
+        min-width: 250px;
+        min-height: 250px;
+        max-width: 320px;
+        max-height: 320px;
+    }
+
+    .my_card img[class^="burned_candle"],
+    .my_card img[class^="candle"] {
+        min-width: 35px;
+        min-height: 52px;
+        max-width: 48px;
+        max-height: 68px;
+    }
+
+    .birthday_card {
+        padding: 22px 18px;
+        width: 94%;
+    }
+
+    .birthday_title {
+        font-size: 1.4rem;
+    }
+
+    .birthday_subtitle {
+        font-size: 0.8rem;
+    }
+
+    .hearts {
+        font-size: 1.5rem;
+    }
+
+    .birthday_emojis {
+        font-size: 1.7rem;
     }
 }
