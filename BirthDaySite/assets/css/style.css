@@ -548,3 +548,82 @@ html, body {
         font-size: 1.7rem;
     }
 } */
+ /* ============================================= */
+/* SAMSUNG A33 - xüsusi responsive */
+/* Ekran eni: ~412px */
+/* ============================================= */
+@media (max-width: 420px) and (min-width: 390px) {
+
+    .baby_bear {
+        width: 160px;
+    }
+
+    .cake_png {
+        width: 75vw;
+        height: 75vw;
+        max-width: 350px;
+        max-height: 350px;
+        min-width: 240px;
+        min-height: 240px;
+    }
+
+    .my_card img[class^="burned_candle"],
+    .my_card img[class^="candle"] {
+        width: 9vw;
+        height: 11vw;
+        min-width: 34px;
+        min-height: 48px;
+        max-width: 55px;
+        max-height: 75px;
+    }
+
+    /* A33 üçün xüsusi şam yerləşmələri – bir az yuxarı və daha sıx */
+    .burned_candle1, .candle1 { left: 26%; top: 30%; }
+    .burned_candle2, .candle2 { left: 30%; top: 29.5%; }
+    .burned_candle3, .candle3 { left: 34%; top: 29%; }
+    .burned_candle4, .candle4 { left: 38%; top: 28.5%; }
+    .burned_candle5, .candle5 { left: 42%; top: 28%; }
+    .burned_candle6, .candle6 { left: 46%; top: 27.5%; }
+    .burned_candle7, .candle7 { left: 50%; top: 28%; }
+    .burned_candle8, .candle8 { left: 54%; top: 28.5%; }
+    .burned_candle9, .candle9 { left: 58%; top: 29%; }
+    .burned_candle10, .candle10 { left: 62%; top: 29.5%; }
+    .burned_candle11, .candle11 { left: 66%; top: 30%; }
+
+    .burned_candle12, .candle12 { left: 28%; top: 32%; }
+    .burned_candle13, .candle13 { left: 32%; top: 31.5%; }
+    .burned_candle14, .candle14 { left: 36%; top: 31%; }
+    .burned_candle15, .candle15 { left: 40%; top: 30.5%; }
+    .burned_candle16, .candle16 { left: 44%; top: 30%; }
+    .burned_candle17, .candle17 { left: 48%; top: 30.5%; }
+    .burned_candle18, .candle18 { left: 52%; top: 31%; }
+    .burned_candle19, .candle19 { left: 56%; top: 31.5%; }
+    .burned_candle20, .candle20 { left: 60%; top: 32%; }
+
+    /* A33 warning/text ölçüləri */
+    .Warning h1 {
+        font-size: 1.2rem;
+        padding: 10px 25px;
+    }
+
+    .birthday_card {
+        padding: 25px 20px;
+        width: 90%;
+    }
+
+    .birthday_title {
+        font-size: 1.6rem;
+    }
+
+    .birthday_subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hearts {
+        font-size: 1.6rem;
+    }
+
+    .birthday_emojis {
+        font-size: 1.8rem;
+    }
+}
